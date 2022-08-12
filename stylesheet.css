@@ -1,0 +1,64 @@
+.grid-container {
+    border: solid 2px #000;
+    display: grid;
+    grid-template-columns: 8em 8em 8em;
+    grid-template-rows: 8em 8em 8em;
+    background-color: floralwhite;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    perspective: 10000px;
+    padding: 10px;
+}
+.card {
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    height: 6em;
+    width: 6em;
+    font-size: 1em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-item, .grid-item-back {
+    text-align:center;
+    width: 6em;
+    height: 6em;
+    font-size: 1em;
+    margin: 2em;
+    color: gold;
+    position: absolute;
+    align-items: center;
+    font-family: "fantasy";
+}
+
+.grid-item {
+    z-index: 2;
+    background: linear-gradient(#08aeea, #2af598);
+    backface-visibility: hidden;
+}
+
+.grid-item-back {
+    z-index: 1;
+    background: linear-gradient(#f8da61, #ff5acd);
+    transform: rotateY(180deg);
+    color: darkblue;
+}
+
+h1 {
+    font-family: "fantasy";
+}
+
+.quiz-area {
+    background-color: greenyellow;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.color1 {background-color: #675BA7;}
+.color2 {background-color: #9BC850;}
+.color3 {background-color: #A62E5C;}
+.color4 {background-color: #2A9FBC;}
